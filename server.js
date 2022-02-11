@@ -32,8 +32,9 @@ app.post('/login', function(req, res) {
     const username = req.body.username;
     const password = req.body.password;
 
+    console.log(username + "\n" + password);
     // This should come from the database
-    const mockUsername = 'mojahid';
+    const mockUsername = "mojahid";
     const mockPassword = "1337";
 
     if (username === mockUsername && password === mockPassword) {
